@@ -17,11 +17,11 @@ public class BaseTest {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://facebook.com");
+		driver.get("https://www.facebook.com/");
 	}
 	
 	@AfterTest
-	public void tesrDown()
+	public void tearDown()
 	{
 		driver.quit();
 	}

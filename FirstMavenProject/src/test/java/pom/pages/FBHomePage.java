@@ -8,8 +8,8 @@ public class FBHomePage {
 	
 	WebDriver driver;
 	
-	@FindBy(xpath="//*[@id=\"mount_0_0\"]/div/div/div[2]/div[4]/div[1]/div[1]/a/span") WebElement username_text;
-	@FindBy(xpath="//*[@id=\"mount_0_0\"]/div/div/div[2]/div[4]/div[1]/span/div[1]/div[1]/img") WebElement account_button;
+	@FindBy(xpath="//div[text()='Karthik Raja']") WebElement username_text;
+	@FindBy(xpath="//*[@id=\"mount_0_0\"]/div/div/div[1]/div[2]/div[4]/div/span/div/div/img") WebElement account_button;
 	@FindBy(xpath="//span[text()='Log Out']") WebElement logout_button;
 	
 	public FBHomePage(WebDriver driver)
@@ -27,6 +27,7 @@ public class FBHomePage {
 	{
 		
 		String userText  = username_text.getText();
+		System.out.println(userText);
 		return userText;	
 	}
 

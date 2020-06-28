@@ -17,7 +17,7 @@ public class FBLoginTest extends BaseTest{
 		FBLoginPage loginpage = PageFactory.initElements(driver, FBLoginPage.class);
 		loginpage.loginToFB("kraja137@yahoo.com", "needamangalam");
 		FBHomePage homepage = PageFactory.initElements(driver, FBHomePage.class);
-		assertTrue(homepage.verifyLoggedInUsername().trim().equalsIgnoreCase("karthik"));
+		assertTrue(homepage.verifyLoggedInUsername().trim().equalsIgnoreCase("Karthik Raja"));
 		homepage.logout();
 	}
 	
